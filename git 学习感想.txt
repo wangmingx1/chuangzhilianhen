@@ -1,0 +1,9 @@
+1、如果开始在本地使用git init后相当于先在本地建了一个本地仓，此本地仓在远程不存在，所以当拉取或者推送的时候，由于远程不存在所以无法进行，解决方法如下：
+（1）、需要将本地和远程建立连接把本地仓与远程仓同步起来
+      a、本地和远程建立SSH连接，首先确定C盘是否存在.ssh的一个.pud后缀的一个文件，如果不存在就使用下面命令创建（注意直接在.ssh目录下，右击后选择git Bash here然后输入命令：ssh-keygen -t rsa -C "youremail@example.com" ）
+     b、之后进行下一步操作，如链接 ：https://www.cnblogs.com/liuyanhang/p/15411921.html
+     其中git push -u origin master 相当于git branch --set-upstream-to=origin/master master//将远程仓库origin的master分支与本地仓库master分支关联
+加git push origin maste
+
+2、如果你有远程仓库了就直接使用git clone 后然后就进一步操作就可以了，可以不用建一个本地仓
+
